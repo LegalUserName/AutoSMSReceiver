@@ -1,4 +1,4 @@
-package SMS.autosmsreceiver;
+package autosmsreceiver;
 
 
 import android.content.BroadcastReceiver;
