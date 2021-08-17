@@ -1,0 +1,2 @@
+rootProject.name = "AutoSMSReceiver"
+include ':app'
