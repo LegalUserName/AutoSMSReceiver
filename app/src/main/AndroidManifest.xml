@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="autosmsreceiver">
-
-<application
-    android:allowBackup="true"
-    android:label="@string/app_name"
-    android:supportsRtl="true"/>
-
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="autosmsreceiver">
+    <application
+        android:allowBackup="true" >
+        <receiver android:name=".AutoSMSReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+    </application>
 </manifest>
